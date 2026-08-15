@@ -22,7 +22,7 @@
 /* Responsive thumbnail image styling */
 .project-thumb {
     width: 100%;
-    height: 180px;
+    height: 270px;
     object-fit: cover; /* Crops image cleanly without distorting aspect ratio */
     border-radius: 4px;
     margin-bottom: 12px;
