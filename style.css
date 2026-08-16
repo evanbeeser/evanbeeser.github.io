@@ -1,15 +1,24 @@
-/* Header and Navigation Styling */
+/* Enable Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
 header {
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
 }
 
 nav ul {
-    list-style: none;         /* Removes bullet points */
+    list-style: none;
     margin: 0;
-    padding: 0;
-    display: flex;            /* Places items side-by-side */
-    justify-content: flex-end; /* Aligns menu to the top right */
-    gap: 20px;                /* Space between links */
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 nav a {
@@ -18,24 +27,36 @@ nav a {
     font-weight: 600;
 }
 
-/* Center main page titles */
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/* Container for the 3-column layout */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 24px;                             /* Space between cards */
+/* Section Spacing & Text Alignment */
+.page-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-/* Individual card styling */
+.contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-links a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* 3-Column Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-top: 20px;
+}
+
+/* Card Styling */
 .project-card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -44,24 +65,29 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
-/* Responsive thumbnail image styling */
 .project-thumb {
     width: 100%;
     height: 270px;
-    object-fit: cover; /* Crops image cleanly without distorting aspect ratio */
+    object-fit: cover;
     border-radius: 4px;
     margin-bottom: 12px;
 }
 
-/* Responsive fallback for smaller mobile screens */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     nav ul {
-        justify-content: center; /* Center navigation links on small screens */
+        justify-content: center;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .projects-grid {
-        grid-template-columns: 1fr; /* Switch to 1 column on mobile */
+        grid-template-columns: 1fr;
     }
 }
