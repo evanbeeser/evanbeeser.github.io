@@ -81,3 +81,32 @@ h1 {
     transform: translateY(-4px);
     border-color: var(--accent);
 }
+
+/* Responsive layout adjustments for half-screen / narrow browser tabs */
+@media (max-width: 1100px) {
+    /* Switch from 3 columns to 2 columns when half-screened */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Adjust thumbnail height so images stay proportional */
+    .project-thumb {
+        height: 220px;
+    }
+}
+
+@media (max-width: 650px) {
+    /* Switch to 1 column on mobile screens */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-thumb {
+        height: 240px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+}
