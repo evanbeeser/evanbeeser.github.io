@@ -1,3 +1,30 @@
+/* Header and Navigation Styling */
+header {
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;         /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;            /* Places items side-by-side */
+    justify-content: flex-end; /* Aligns menu to the top right */
+    gap: 20px;                /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+}
+
+/* Center main page titles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 /* Container for the 3-column layout */
 .projects-grid {
     display: grid;
@@ -30,6 +57,10 @@
 
 /* Responsive fallback for smaller mobile screens */
 @media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Center navigation links on small screens */
+    }
+
     .projects-grid {
         grid-template-columns: 1fr; /* Switch to 1 column on mobile */
     }
