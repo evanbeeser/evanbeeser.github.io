@@ -10,17 +10,61 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
+        <!-- About Section -->
+        <section id="about" class="page-section">
             <h1>Hi, I'm Evan</h1>
             <p>Welcome to my portfolio! Here is a bit about my background and experience.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h2>Get in Touch</h2>
+            <ul class="contact-links">
+                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page-section">
+            <h2>My Projects</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 Card -->
+                <article class="project-card">
+                    <img src="images/project-1-thumb.jpg" alt="2027 TMR Rover Arm" class="project-thumb">
+                    <h2>2027 TMR Rover Arm</h2>
+                    <p>6-DoF Rover Arm for TMR</p>
+                    <a href="projects/project-1.html">Read More &rarr;</a>
+                </article>
+
+                <!-- Project 2 Card -->
+                <article class="project-card">
+                    <img src="images/project-2-thumb.jpg" alt="2026 TMR Rover Arm" class="project-thumb">
+                    <h2>2026 TMR Rover Arm</h2>
+                    <p>A brief summary of what this project is about.</p>
+                    <a href="projects/project-2.html">Read More &rarr;</a>
+                </article>
+
+                <!-- Project 3 Card -->
+                <article class="project-card">
+                    <img src="images/project-3-thumb.jpg" alt="2027 TMR Rover Arm Actuators" class="project-thumb">
+                    <h2>2027 TMR Rover Arm Actuators</h2>
+                    <p>A brief summary of what this project is about.</p>
+                    <a href="projects/project-3.html">Read More &rarr;</a>
+                </article>
+
+                <!-- Add additional project cards here (4 through 10) -->
+            </div>
         </section>
     </main>
 
