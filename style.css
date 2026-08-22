@@ -58,23 +58,23 @@ nav a:hover, nav a.active {
     color: var(--accent);
 }
 
-/* Main Layout & Hero Section */
+/* Main Layout & Center Headings */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px 80px;
 }
 
-#hero {
-    max-width: 800px;
-    margin: 60px auto;
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
+#hero {
+    max-width: 800px;
+    margin: 60px auto;
     text-align: center;
 }
 
@@ -127,7 +127,7 @@ h1 {
     background-color: var(--accent-hover);
 }
 
-/* Projects Grid Styling (3-Column Base Layout) */
+/* Projects Grid Styling */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -176,6 +176,82 @@ h1 {
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
+}
+
+/* Experience Log Timeline Layout */
+.timeline-container {
+    max-width: 850px;
+    margin: 40px auto 0;
+    position: relative;
+    padding-left: 24px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -31px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    border: 3px solid var(--bg-color);
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.timeline-content h2 {
+    font-size: 1.3rem;
+    margin: 0 0 2px 0;
+    color: var(--text-primary);
+}
+
+.timeline-org {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+}
+
+.timeline-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.timeline-image {
+    width: 240px;
+    height: 180px;
+    flex-shrink: 0;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
 }
 
 /* Individual Project Detail Pages */
@@ -254,7 +330,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive layout adjustments for half-screen / narrow browser tabs */
+/* Responsive layout adjustments for half-screen & mobile */
 @media (max-width: 1100px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -263,6 +339,18 @@ footer {
 
     .project-thumb {
         height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .timeline-image {
+        width: 100%;
+        height: 200px;
     }
 }
 
