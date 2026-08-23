@@ -11,12 +11,11 @@
 }
 
 html {
-    overflow-y: scroll; /* Force consistent scrollbar room to eliminate contact page layout shifts */
+    overflow-y: scroll;
 }
 
 body {
     background-color: var(--outer-bg);
-    /* Subtle radial gradient accent on outer background margins */
     background-image: radial-gradient(circle at 50% 0%, #152232 0%, var(--outer-bg) 70%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,8 +46,9 @@ header {
 
 nav {
     display: flex;
-    justify-space: space-between;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo a {
@@ -149,39 +149,36 @@ h1 {
 .bio {
     font-size: 1.15rem;
     color: var(--text-secondary);
-    margin: 0 0 32px 0;
-    line-height: 1.7;
+    margin: 0;
+    line-height: 1.8;
 }
 
-.bio a {
-    color: var(--accent);
-    text-decoration: none;
+/* Inline Embedded Pill Links */
+.inline-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 14px;
+    margin: 0 4px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--accent) !important;
+    font-size: 1rem;
     font-weight: 500;
-}
-
-.bio a:hover {
-    text-decoration: underline;
-}
-
-/* Call To Action Button & Styled Back Link */
-.cta-button, .back-link {
-    display: inline-block;
-    padding: 12px 28px;
-    background-color: var(--accent);
-    color: #121212 !important;
-    font-weight: 600;
     border-radius: 6px;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
+    text-decoration: none !important;
+    vertical-align: middle;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.cta-button:hover, .back-link:hover {
-    background-color: var(--accent-hover);
-    text-decoration: none;
+.inline-pill:hover {
+    background-color: var(--border-color);
+    border-color: var(--accent);
+    transform: translateY(-1px);
 }
 
-.back-link {
-    margin-top: 30px;
+.bio-actions {
+    margin-top: 20px;
+    line-height: 2.2;
 }
 
 /* Projects Grid Styling */
@@ -261,7 +258,7 @@ h1 {
 
 .timeline-marker {
     position: absolute;
-    left: -37px; /* Centered exactly over the 2px left border */
+    left: -37px;
     top: 8px;
     width: 12px;
     height: 12px;
@@ -317,37 +314,9 @@ h1 {
     border: 1px solid var(--border-color);
 }
 
-/* Individual Project Detail Pages */
-.project-detail {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-.project-detail h1 {
-    text-align: left;
-}
-
-.project-detail h2 {
-    color: var(--text-primary);
-    margin-top: 30px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
-}
-
-.project-detail ul {
-    color: var(--text-secondary);
-    padding-left: 20px;
-    font-size: 1.05rem;
-}
-
-.project-detail li {
-    margin-bottom: 8px;
-}
-
 /* Contact Page Styling */
 #contact {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
@@ -369,11 +338,11 @@ h1 {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 30px 20px;
+    padding: 30px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-decoration: none;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -385,7 +354,7 @@ h1 {
 
 .contact-card span {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -399,7 +368,7 @@ h1 {
     color: var(--accent);
     font-weight: 500;
     font-size: 0.95rem;
-    margin-top: 4px;
+    word-break: break-all;
 }
 
 /* Footer Styling Standardized */
