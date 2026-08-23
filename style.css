@@ -23,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-/* Page Outer Wrapper for Dark Side Margins */
+/* Page Outer Wrapper */
 .site-wrapper {
     max-width: 1350px;
     margin: 0 auto;
@@ -39,7 +39,7 @@ body {
         15px 0 35px rgba(0, 0, 0, 0.7);
 }
 
-/* Header & Navigation Standardized Across All Pages */
+/* Header & Navigation */
 header {
     width: 100%;
     box-sizing: border-box;
@@ -54,16 +54,27 @@ nav {
     width: 100%;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo a {
     display: flex;
     align-items: center;
     gap: 14px;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--text-primary);
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+}
+
+.logo a span {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    text-transform: lowercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    transform: scaleX(1.08);
+    transform-origin: left center;
 }
 
 .nav-logo {
@@ -78,6 +89,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 28px;
+    margin-left: auto;
 }
 
 nav a {
@@ -107,25 +119,27 @@ h1 {
     text-align: center;
 }
 
-/* About / Hero Section Split Layout */
+/* About / Hero Section (Expanded Width) */
 #hero {
-    max-width: 1050px;
+    max-width: 1200px;
     margin: 40px auto;
+    width: 100%;
 }
 
 .about-split {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
+    width: 100%;
 }
 
 .about-image {
-    flex: 0 0 380px;
+    flex: 0 0 420px;
 }
 
 .about-image img {
     width: 100%;
-    height: 480px;
+    height: 500px;
     object-fit: cover;
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -143,7 +157,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--accent);
     font-weight: 500;
     margin-top: 0;
@@ -154,10 +168,10 @@ h1 {
     font-size: 1.15rem;
     color: var(--text-secondary);
     margin: 0;
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
-/* Inline Embedded Pill Links (Without Arrows) */
+/* Inline Embedded Pill Links */
 .inline-pill {
     display: inline-flex;
     align-items: center;
@@ -181,7 +195,7 @@ h1 {
 }
 
 .bio-actions {
-    margin-top: 20px;
+    margin-top: 24px;
     line-height: 2.2;
 }
 
@@ -404,7 +418,7 @@ footer {
     .about-image {
         flex: auto;
         width: 100%;
-        max-width: 380px;
+        max-width: 420px;
     }
 
     .about-text h1, .subtitle {
