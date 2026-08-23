@@ -119,7 +119,7 @@ h1 {
     text-align: center;
 }
 
-/* Home / Hero Section */
+/* About / Hero Section (Expanded Width) */
 #hero {
     max-width: 1200px;
     margin: 40px auto;
@@ -195,7 +195,7 @@ h1 {
 }
 
 .bio-actions {
-    margin-top: 36px;
+    margin-top: 24px;
     line-height: 2.2;
 }
 
