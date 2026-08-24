@@ -294,10 +294,11 @@ h1 {
     margin: 0;
 }
 
-/* Project Subpage Hero Media (Matching Card Ratio & Narrower Width) */
+/* Project Subpage Hero Media (Matching Card Height & Narrower Width) */
 .project-hero-media {
     width: 100%;
-    max-width: 720px;
+    max-width: 500px;
+    height: 280px;
     margin: 0 auto 40px auto;
     border-radius: 8px;
     overflow: hidden;
@@ -307,7 +308,7 @@ h1 {
 .project-hero-media img,
 .project-hero-media video {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
