@@ -15,28 +15,27 @@ html {
 }
 
 body {
-    background-color: var(--outer-bg);
+    background-color: var(--bg-color);
     color: var(--text-primary);
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    width: 100%;
 }
 
-/* Page Outer Wrapper */
+/* Site Wrapper - Full Width Layout */
 .site-wrapper {
-    max-width: 1350px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    border-left: 1px solid #1a2634;
-    border-right: 1px solid #1a2634;
-    box-shadow: 
-        0 0 50px rgba(0, 0, 0, 0.9),
-        -15px 0 35px rgba(0, 0, 0, 0.7),
-        15px 0 35px rgba(0, 0, 0, 0.7);
+    border: none;
+    box-shadow: none;
 }
 
 /* Header & Navigation */
@@ -119,7 +118,7 @@ h1 {
     text-align: center;
 }
 
-/* About / Hero Section (Expanded Width) */
+/* Home / Hero Section */
 #hero {
     max-width: 1200px;
     margin: 40px auto;
@@ -195,7 +194,7 @@ h1 {
 }
 
 .bio-actions {
-    margin-top: 24px;
+    margin-top: 36px;
     line-height: 2.2;
 }
 
@@ -402,7 +401,7 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Responsive layout adjustments */
+/* Responsive Layout Adjustments */
 @media (max-width: 1100px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
