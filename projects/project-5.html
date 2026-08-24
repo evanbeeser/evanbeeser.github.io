@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REX | Evan Beeser</title>
+    <title>Project 05 | Evan Beeser</title>
+    
+    <!-- Chrome Tab Favicon -->
     <link rel="icon" type="image/x-icon" href="../eb_icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="site-wrapper">
+        <!-- Header & Navigation -->
         <header>
             <nav>
                 <div class="logo">
@@ -29,60 +34,65 @@
             </nav>
         </header>
 
-        <main class="project-detail-main">
-            <div class="project-detail-container">
-                <a href="../projects.html" class="back-link">&larr; Back to All Projects</a>
-
-                <h1 class="project-title">REX</h1>
-
-                <div class="project-hero-media">
-                    <img src="../images/project-5-thumb.jpg" alt="REX Combat Robot" class="project-hero-img">
-                    <p class="image-caption">REX combat robot fully assembled in its final competition configuration for BotBrawl.</p>
-                </div>
-
-                <div class="project-meta-bar">
-                    <p><strong>ROLE:</strong> Personal Design Project</p>
-                    <p><strong>DATE:</strong> 2024 – 2025</p>
-                </div>
-
-                <section class="project-section">
-                    <h2>Background</h2>
-                    <p>A 3lb beetleweight combat robot built for the local Ontario BotBrawl league as a personal project, testing high-energy weapon drive integration and impact-resistant chassis designs.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>System Overview</h2>
-                    <p>Custom 6061-T6 aluminum frame, UHMW top armor, and high-RPM brushless weapon drive assembly engineered to withstand severe shock loads.</p>
+        <!-- Main Content Area -->
+        <main>
+            <article class="project-subpage">
+                <!-- Project Header -->
+                <header class="project-header">
+                    <h1>Custom Harmonic Actuator Integration</h1>
                     
-                    <div class="project-media-block">
-                        <img src="../images/project-5-detail-1.jpg" alt="Internal Layout REX">
-                        <p class="image-caption">Internal component layout detailing ESC placement, battery retention, and drive motors.</p>
+                    <!-- Unified Role & Date Meta Line -->
+                    <div class="project-meta-line">
+                        <span class="meta-item">Role: Mechanical Designer</span>
+                        <span class="divider">|</span>
+                        <span class="meta-item">Date: Sept 2024 – Present</span>
                     </div>
+                </header>
+
+                <!-- Hero Image Container -->
+                <div class="project-hero-media">
+                    <img src="../images/project-5-thumb.jpg" alt="Harmonic Actuator CAD Render">
+                </div>
+
+                <!-- Italicized Tagline Below Image -->
+                <p class="project-caption-tagline">Zero-backlash strain wave gearing integration for high-precision robot joint control.</p>
+
+                <!-- Project Body Content -->
+                <div class="project-body-full">
+                    <h2>Overview</h2>
+                    <p>
+                        Developed custom harmonic actuator drive assemblies to provide zero-backlash motion control in high-precision robot arm wrist and elbow joints.
+                    </p>
+
+                    <h2>Design & Analysis</h2>
+                    <p>
+                        Engineered custom flexspline and wave generator mounting interfaces using SolidWorks. Performed precise tolerance stack-up evaluations to maintain strict radial concentricity and pre-load requirements across high-power density drive components.
+                    </p>
+
+                    <h2>Key Engineering Deliverables</h2>
+                    <ul>
+                        <li>Integrated cross-roller bearings to support high combined axial and moment loading.</li>
+                        <li>Configured absolute position encoders and hall sensors with ODrive controllers.</li>
+                        <li>Fabricated custom aluminum mounting plates utilizing precision CNC milling workflows.</li>
+                    </ul>
+                </div>
+
+                <!-- Gallery Grid -->
+                <section class="project-gallery">
+                    <img src="../images/project5-detail-1.jpg" alt="Harmonic Drive Component Layout">
+                    <img src="../images/project5-detail-2.jpg" alt="Harmonic Drive Cross-Section CAD">
                 </section>
 
-                <section class="project-section">
-                    <h2>Engineering & CAD Details</h2>
-                    <p>CAD modeling focused on weight distribution to keep the center of mass balanced directly over the drive wheels for maximum traction.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>Media Gallery</h2>
-                    <div class="project-gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/project-5-gallery-1.jpg" alt="Weapon Disk Machining">
-                            <p class="image-caption">AR500 steel weapon disc after waterjet cutting and heat treatment.</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/project-5-gallery-2.jpg" alt="Arena Post-Match">
-                            <p class="image-caption">Post-match inspection inside the BotBrawl competition safety cage.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <!-- Back Link at Bottom -->
+                <div class="back-link-container">
+                    <a href="../projects.html" class="back-link">← back to all projects</a>
+                </div>
+            </article>
         </main>
 
+        <!-- Footer -->
         <footer>
-            <p>Last updated: August 23, 2026</p>
+            <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
     </div>
 </body>
