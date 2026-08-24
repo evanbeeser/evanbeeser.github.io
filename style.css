@@ -112,7 +112,7 @@ main {
     flex: 1;
     width: 100%;
     box-sizing: border-box;
-    padding: 40px 40px 80px;
+    padding: 20px 40px 80px;
 }
 
 h1 {
@@ -268,17 +268,18 @@ h1 {
    ========================================================================== */
 .project-subpage {
     max-width: 800px;
-    margin: 0 auto;
+    margin: -10px auto 0;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
 .project-header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .project-header h1 {
     text-align: left;
+    margin-top: 0;
     margin-bottom: 12px;
     font-size: 2.5rem;
 }
@@ -299,8 +300,9 @@ h1 {
 }
 
 .project-meta-line .divider {
-    color: var(--border-color);
-    font-weight: 300;
+    color: var(--text-primary);
+    font-weight: 600;
+    opacity: 0.8;
 }
 
 /* Hero Media - Preserved 4:3 Ratio & Scaled Up Size */
@@ -604,6 +606,7 @@ footer {
 
     .project-subpage {
         padding: 0 24px;
+        margin-top: 0;
     }
 }
 
