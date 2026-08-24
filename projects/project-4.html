@@ -3,86 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 TMR Rover Arm Actuators | Evan Beeser</title>
-    <link rel="icon" type="image/x-icon" href="../eb_icon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <title>Project 04 | Evan Beeser</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="site-wrapper">
+        <!-- Header & Navigation -->
         <header>
             <nav>
                 <div class="logo">
-                    <a href="../index.html">
-                        <img src="../eb_icon.ico" alt="Evan Beeser Logo" class="nav-logo">
+                    <a href="index.html">
                         <span>evan beeser</span>
                     </a>
                 </div>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../projects.html" class="active">Projects</a></li>
-                    <li><a href="../experience.html">Experience</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="projects.html" class="active">projects</a></li>
+                    <li><a href="experience.html">experience</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="project-detail-main">
-            <div class="project-detail-container">
-                <a href="../projects.html" class="back-link">&larr; Back to All Projects</a>
-
-                <h1 class="project-title">2026 TMR Rover Arm Actuators</h1>
-
-                <div class="project-hero-media">
-                    <img src="../images/project-4-thumb.jpg" alt="Cycloidal Actuator Assembly" class="project-hero-img">
-                    <p class="image-caption">Assembled 2-stage differential cycloidal actuator prototype prior to motor calibration.</p>
-                </div>
-
-                <div class="project-meta-bar">
-                    <p><strong>ROLE:</strong> Lead Actuator Designer</p>
-                    <p><strong>DATE:</strong> Sep 2024 – Aug 2025</p>
-                </div>
-
-                <section class="project-section">
-                    <h2>Background</h2>
-                    <p>Fully integrated robot actuators featuring a 2-stage differential cycloidal reduction, engineered to deliver ultra-high gear ratios in a compact form factor.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>System Overview</h2>
-                    <p>Mathematical modeling of cycloidal pin and disc profiles using custom Python scripts to optimize contact stress and tooth engagement efficiency.</p>
+        <!-- Main Content Area -->
+        <main>
+            <article class="project-subpage">
+                <!-- Project Header -->
+                <header class="project-header">
+                    <h1>Cycloidal Actuator Development</h1>
+                    <p class="project-tagline">High-torque, compact speed reduction for custom robotic arm joints.</p>
                     
-                    <div class="project-media-block">
-                        <img src="../images/project-4-detail-1.jpg" alt="Internal Pin Ring CAD">
-                        <p class="image-caption">Internal view showing dual cycloidal discs offset by 180 degrees for vibration cancellation.</p>
+                    <!-- Role & Date on the Same Line -->
+                    <div class="project-meta-line">
+                        <span class="role">Arm System Lead</span>
+                        <span class="divider">|</span>
+                        <span class="date">Sept 2024 – Present</span>
                     </div>
+                </header>
+
+                <!-- Hero Image Container (Preserved 4:3 Aspect Ratio, Scaled Up) -->
+                <div class="project-hero-media">
+                    <img src="images/project4-hero.jpg" alt="Cycloidal Actuator Assembly Breakdown">
+                </div>
+
+                <!-- Project Body & Details Layout -->
+                <div class="project-layout">
+                    <div class="project-body">
+                        <h2>Overview</h2>
+                        <p>
+                            Designed and manufactured a custom low-backlash cycloidal speed reducer tailored for high-torque robotic joints. The goal was to maximize power density while minimizing overall mass and axial length.
+                        </p>
+
+                        <h2>Design & Analysis</h2>
+                        <p>
+                            Generated custom cycloidal rotor profiles in CAD to optimize pin engagement and reduce stress concentrations under peak dynamic loads. Evaluated profile geometry using parametric modeling tools and performed static stress analyses on key torque-transmitting components.
+                        </p>
+
+                        <h2>Key Engineering Deliverables</h2>
+                        <ul>
+                            <li>Modeled dual-disc cycloidal gear geometry to eliminate eccentric vibrations.</li>
+                            <li>Integrated custom needle roller pins and precision output shaft bearings.</li>
+                            <li>Validated back-drivability and positional accuracy on a test bench setup.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Sidebar Specifications -->
+                    <aside class="project-sidebar">
+                        <div class="spec-group">
+                            <span class="spec-label">Organization</span>
+                            <span class="spec-value">Toronto MetRobotics</span>
+                        </div>
+                        <div class="spec-group">
+                            <span class="spec-label">Reduction Ratio</span>
+                            <span class="spec-value">11:1</span>
+                        </div>
+                        <div class="spec-group">
+                            <span class="spec-label">Tools Used</span>
+                            <span class="spec-value">SOLIDWORKS, FEA, CNC Milling, FDM 3D Printing</span>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- Gallery Grid (Optional) -->
+                <section class="project-gallery">
+                    <img src="images/project4-detail-1.jpg" alt="Cycloidal Rotor Profile Detail">
+                    <img src="images/project4-detail-2.jpg" alt="Actuator Assembly on Test Bench">
                 </section>
 
-                <section class="project-section">
-                    <h2>Engineering & CAD Details</h2>
-                    <p>Includes precision needle roller bearing integration and CNC milled aluminum housing components designed for maximum heat dissipation.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>Media Gallery</h2>
-                    <div class="project-gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/project-4-gallery-1.jpg" alt="Machined Discs">
-                            <p class="image-caption">Precision CNC turned and milled cycloidal disc set.</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/project-4-gallery-2.jpg" alt="Thermal Imaging Test">
-                            <p class="image-caption">Thermal camera capture during continuous duty-cycle endurance testing.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <!-- Back Link Placed at Bottom -->
+                <div class="back-link-container">
+                    <a href="projects.html" class="back-link">← back to all projects</a>
+                </div>
+            </article>
         </main>
 
+        <!-- Footer -->
         <footer>
-            <p>Last updated: August 23, 2026</p>
+            <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
     </div>
 </body>
