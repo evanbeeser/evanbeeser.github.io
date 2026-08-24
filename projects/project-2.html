@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 TMR Rover Arm | Evan Beeser</title>
+    <title>Project 02 | Evan Beeser</title>
+    
+    <!-- Chrome Tab Favicon -->
     <link rel="icon" type="image/x-icon" href="../eb_icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="site-wrapper">
+        <!-- Header & Navigation -->
         <header>
             <nav>
                 <div class="logo">
@@ -29,60 +34,65 @@
             </nav>
         </header>
 
-        <main class="project-detail-main">
-            <div class="project-detail-container">
-                <a href="../projects.html" class="back-link">&larr; Back to All Projects</a>
-
-                <h1 class="project-title">2026 TMR Rover Arm</h1>
-
-                <div class="project-hero-media">
-                    <img src="../images/project-2-thumb.jpg" alt="2026 TMR Rover Arm Overview" class="project-hero-img">
-                    <p class="image-caption">Assembled 2026 6-DoF manipulator arm mounted on the testing platform.</p>
-                </div>
-
-                <div class="project-meta-bar">
-                    <p><strong>ROLE:</strong> Arm System Lead</p>
-                    <p><strong>DATE:</strong> Sep 2024 – Aug 2025</p>
-                </div>
-
-                <section class="project-section">
-                    <h2>Background</h2>
-                    <p>All new 6-DoF robotic manipulator arm designed for TMR 2026 URC competition, focusing on high precision end-effector control and lightweight structural design.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>System Overview</h2>
-                    <p>Overview of the 6-DoF cinematic structure, gear reductions, and electronics routing designed for field swapability during competition panels.</p>
+        <!-- Main Content Area -->
+        <main>
+            <article class="project-subpage">
+                <!-- Project Header -->
+                <header class="project-header">
+                    <h1>6-DOF Robotic Arm System</h1>
                     
-                    <div class="project-media-block">
-                        <img src="../images/project-2-detail-1.jpg" alt="Arm Assembly View">
-                        <p class="image-caption">Side-profile CAD model displaying link lengths and range-of-motion envelopes.</p>
+                    <!-- Unified Role & Date Meta Line -->
+                    <div class="project-meta-line">
+                        <span class="meta-item">Role: Arm System Lead</span>
+                        <span class="divider">|</span>
+                        <span class="meta-item">Date: Sept 2024 – Present</span>
                     </div>
+                </header>
+
+                <!-- Hero Image Container -->
+                <div class="project-hero-media">
+                    <img src="../images/project-2-thumb.jpg" alt="6-DOF Robotic Arm Assembly">
+                </div>
+
+                <!-- Italicized Tagline Below Image -->
+                <p class="project-caption-tagline">Custom 6-degree-of-freedom manipulator designed for planetary rover payload manipulation.</p>
+
+                <!-- Project Body Content -->
+                <div class="project-body-full">
+                    <h2>Overview</h2>
+                    <p>
+                        Led the full mechanical lifecycle of a custom 6-degree-of-freedom robotic arm engineered for high reach-to-weight ratio, precise positioning, and dynamic payload handling under harsh competition conditions.
+                    </p>
+
+                    <h2>Design & Analysis</h2>
+                    <p>
+                        Executed comprehensive kinematic modeling and joint trajectory generation in MATLAB to establish reachable workspace boundaries. Applied structural FEA to optimize aluminum link cross-sections for mass reduction while maintaining high torsional rigidity across all dynamic poses.
+                    </p>
+
+                    <h2>Key Engineering Deliverables</h2>
+                    <ul>
+                        <li>Designed lightweight modular joint housings incorporating integrated harmonic and cycloidal reducers.</li>
+                        <li>Utilized Poka-yoke assembly practices and integrated internal cable routing through joint pivots.</li>
+                        <li>Managed production drawing packages featuring complete GD&T callouts and fits.</li>
+                    </ul>
+                </div>
+
+                <!-- Gallery Grid -->
+                <section class="project-gallery">
+                    <img src="../images/project2-detail-1.jpg" alt="Robotic Arm Kinematic Model">
+                    <img src="../images/project2-detail-2.jpg" alt="Robotic Arm Physical Test Assembly">
                 </section>
 
-                <section class="project-section">
-                    <h2>Engineering & CAD Details</h2>
-                    <p>CAD models developed in SolidWorks focusing on modular joint replacement and internal wire harnesses to avoid external snagging.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>Media Gallery</h2>
-                    <div class="project-gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/project-2-gallery-1.jpg" alt="Field Testing">
-                            <p class="image-caption">Field testing during simulated equipment servicing tasks.</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/project-2-gallery-2.jpg" alt="End Effector Detail">
-                            <p class="image-caption">Close-up view of the quick-change end-effector mechanism.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <!-- Back Link at Bottom -->
+                <div class="back-link-container">
+                    <a href="../projects.html" class="back-link">← back to all projects</a>
+                </div>
+            </article>
         </main>
 
+        <!-- Footer -->
         <footer>
-            <p>Last updated: August 23, 2026</p>
+            <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
     </div>
 </body>
