@@ -225,9 +225,10 @@ h1 {
     border-color: var(--accent);
 }
 
+/* Unified Project Thumbnail Properties */
 .project-thumb {
     width: 100%;
-    height: 280px;
+    aspect-ratio: 4 / 3; /* Fixed aspect ratio prevents distortion/disproportional height */
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 12px;
@@ -294,11 +295,10 @@ h1 {
     margin: 0;
 }
 
-/* Project Subpage Hero Media (Matching Card Height & Narrower Width) */
+/* Project Subpage Hero Media - Exact Proportion Lock */
 .project-hero-media {
     width: 100%;
-    max-width: 500px;
-    height: 280px;
+    max-width: 420px; /* Scaled down slightly to maintain ideal height proportions */
     margin: 0 auto 40px auto;
     border-radius: 8px;
     overflow: hidden;
@@ -308,8 +308,8 @@ h1 {
 .project-hero-media img,
 .project-hero-media video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Matches .project-thumb ratio explicitly */
+    object-fit: cover;   /* Guarantees identical framing and crop area */
     display: block;
 }
 
