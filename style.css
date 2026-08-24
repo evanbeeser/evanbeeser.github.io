@@ -225,10 +225,9 @@ h1 {
     border-color: var(--accent);
 }
 
-/* Unified Project Thumbnail Properties */
 .project-thumb {
     width: 100%;
-    aspect-ratio: 4 / 3; /* Fixed aspect ratio prevents distortion/disproportional height */
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 12px;
@@ -256,27 +255,12 @@ h1 {
     text-decoration: underline;
 }
 
-/* Project Subpage Structure */
+/* Project Subpage Structure & Margins */
 .project-subpage {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto;
-}
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 24px;
-    transition: color 0.2s ease;
-}
-
-.back-link:hover {
-    color: var(--accent-hover);
-    text-decoration: underline;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .project-header {
@@ -292,13 +276,37 @@ h1 {
 .project-tagline {
     font-size: 1.25rem;
     color: var(--text-secondary);
-    margin: 0;
+    margin: 0 0 12px 0;
 }
 
-/* Project Subpage Hero Media - Exact Proportion Lock */
+/* Single Line Role | Date Header Meta */
+.project-meta-line {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.project-meta-line .role {
+    color: var(--text-primary);
+}
+
+.project-meta-line .divider {
+    color: var(--border-color);
+    font-weight: 300;
+}
+
+.project-meta-line .date {
+    color: var(--text-secondary);
+}
+
+/* Scaled Up Project Subpage Hero Media with Preserved 4:3 Ratio */
 .project-hero-media {
     width: 100%;
-    max-width: 420px; /* Scaled down slightly to maintain ideal height proportions */
+    max-width: 680px;
     margin: 0 auto 40px auto;
     border-radius: 8px;
     overflow: hidden;
@@ -308,8 +316,9 @@ h1 {
 .project-hero-media img,
 .project-hero-media video {
     width: 100%;
-    aspect-ratio: 4 / 3; /* Matches .project-thumb ratio explicitly */
-    object-fit: cover;   /* Guarantees identical framing and crop area */
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     display: block;
 }
 
@@ -354,6 +363,15 @@ h1 {
     padding: 24px;
 }
 
+/* Sidebar specs fallback to single line if used inside sidebar */
+.spec-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
 .spec-group {
     margin-bottom: 20px;
 }
@@ -391,6 +409,29 @@ h1 {
     object-fit: cover;
     border-radius: 6px;
     border: 1px solid var(--border-color);
+}
+
+/* Bottom Back Link Placement */
+.back-link-container {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
 }
 
 /* Experience Log Timeline Layout */
@@ -584,6 +625,10 @@ footer {
     .project-gallery {
         grid-template-columns: 1fr;
     }
+
+    .project-subpage {
+        padding: 0 24px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -602,5 +647,9 @@ footer {
 
     .project-header h1 {
         font-size: 2rem;
+    }
+
+    .project-subpage {
+        padding: 0 16px;
     }
 }
