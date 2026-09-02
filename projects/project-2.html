@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 TMR Rover Arm | Evan Beeser</title>
-    
-    <!-- Chrome Tab Favicon -->
     <link rel="icon" type="image/x-icon" href="../eb_icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="site-wrapper">
-        <!-- Header & Navigation -->
         <header>
             <nav>
                 <div class="logo">
@@ -25,23 +20,27 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects.html" class="active">Projects</a></li>
                     <li><a href="../experience.html">Experience</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
+                <select class="mobile-nav-select" onchange="if (this.value) window.location.href=this.value;">
+                    <option value="" disabled selected>Menu...</option>
+                    <option value="../index.html">Home</option>
+                    <option value="../projects.html">Projects</option>
+                    <option value="../experience.html">Experience</option>
+                    <option value="../contact.html">Contact</option>
+                </select>
             </nav>
         </header>
 
-        <!-- Main Content Area -->
         <main>
             <article class="project-subpage">
-                <!-- Project Header -->
                 <header class="project-header">
                     <h1>2026 TMR Rover Arm</h1>
                     
-                    <!-- Unified Role & Date Meta Line -->
                     <div class="project-meta-line">
                         <span class="meta-item">Role: Arm System Lead</span>
                         <span class="divider">|</span>
@@ -49,15 +48,12 @@
                     </div>
                 </header>
 
-                <!-- Hero Image Container -->
                 <div class="project-hero-media">
                     <img src="../images/project-2-thumb.jpg" alt="2026 TMR Rover Arm Assembly">
                 </div>
 
-                <!-- Italicized Tagline Below Image -->
                 <p class="project-caption-tagline">All new 6-DoF robotic manipulator arm designed for TMR 2026 URC competition.</p>
 
-                <!-- Project Body Content -->
                 <div class="project-body-full">
                     <h2>Overview</h2>
                     <p>
@@ -77,20 +73,17 @@
                     </ul>
                 </div>
 
-                <!-- Gallery Grid -->
                 <section class="project-gallery">
                     <img src="../images/project2-detail-1.jpg" alt="Rover Arm CAD Layout">
                     <img src="../images/project2-detail-2.jpg" alt="Rover Arm Joint Detail">
                 </section>
 
-                <!-- Back Link at Bottom -->
                 <div class="back-link-container">
                     <a href="../projects.html" class="back-link">← back to all projects</a>
                 </div>
             </article>
         </main>
 
-        <!-- Footer -->
         <footer>
             <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
