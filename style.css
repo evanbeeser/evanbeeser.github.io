@@ -17,7 +17,7 @@ html, body {
 
 .site-wrapper {
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
@@ -26,7 +26,7 @@ html, body {
     overflow-x: hidden;
 }
 
-/* Header Base Styling */
+/* Header & Nav */
 header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
@@ -65,7 +65,6 @@ nav {
     text-decoration: none;
     color: #a0a0a0;
     font-weight: 400;
-    transition: color 0.2s ease;
 }
 
 .desktop-nav a.active,
@@ -74,7 +73,7 @@ nav {
     font-weight: 600;
 }
 
-/* Mobile Navigation Dropdown */
+/* Mobile Dropdown Menu */
 .mobile-nav {
     display: none;
     position: relative;
@@ -101,7 +100,6 @@ nav {
     display: flex;
     flex-direction: column;
     z-index: 100;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .mobile-nav-dropdown a {
@@ -121,7 +119,6 @@ nav {
     color: #fff;
 }
 
-/* Responsive Visibility Switch */
 @media screen and (max-width: 768px) {
     .desktop-nav {
         display: none !important;
@@ -140,17 +137,15 @@ nav {
 }
 
 .about-image img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #333;
 }
 
 .about-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #fff;
-    margin-bottom: 0.2rem;
 }
 
 .subtitle {
@@ -163,14 +158,10 @@ nav {
     text-decoration: none;
 }
 
-.inline-pill:hover {
-    text-decoration: underline;
-}
-
-/* Projects Grid & Cards */
+/* Projects Section & Thumbnails Fix */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
     width: 100%;
@@ -185,29 +176,24 @@ nav {
     color: inherit;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    border-color: #444;
 }
 
 .project-thumb {
     width: 100%;
-    height: 180px;
+    max-width: 100%;
+    height: 160px;
     object-fit: cover;
     display: block;
 }
 
 .project-card h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #fff;
     padding: 1rem 1rem 0.3rem 1rem;
 }
 
 .project-card p {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: #aaa;
     padding: 0 1rem 1rem 1rem;
     flex-grow: 1;
@@ -217,13 +203,12 @@ nav {
     font-size: 0.85rem;
     color: #61afef;
     padding: 0 1rem 1rem 1rem;
-    font-weight: 500;
 }
 
 /* Contact Grid */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -232,7 +217,7 @@ nav {
     background-color: #1e1e1e;
     border: 1px solid #2a2a2a;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.2rem;
     text-decoration: none;
     color: inherit;
 }
@@ -241,61 +226,63 @@ nav {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: #777;
-    letter-spacing: 0.05em;
 }
 
 .contact-card h3 {
     color: #fff;
-    margin: 0.3rem 0;
+    margin: 0.2rem 0;
 }
 
 .contact-link-text {
     color: #61afef;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 }
 
-/* Timeline Layout */
+/* Experience Timeline */
 .timeline-container {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .timeline-item {
-    display: grid;
-    grid-template-columns: 1fr 180px;
+    display: flex;
     gap: 1.5rem;
     background-color: #1e1e1e;
     border: 1px solid #2a2a2a;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.2rem;
+}
+
+.timeline-content {
+    flex: 1;
 }
 
 .timeline-date {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #888;
 }
 
 .timeline-content h2 {
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .timeline-org {
     color: #61afef;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .timeline-desc {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     color: #ccc;
+    margin-top: 0.5rem;
 }
 
 .timeline-image img {
-    width: 100%;
-    height: 120px;
+    width: 140px;
+    height: 100px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -306,7 +293,11 @@ nav {
         text-align: center;
     }
     .timeline-item {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .timeline-image img {
+        width: 100%;
+        height: 140px;
     }
 }
 
