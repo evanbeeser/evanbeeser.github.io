@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,19 +21,23 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul class="nav-links">
+
+                <ul class="desktop-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <select class="mobile-nav-select" onchange="if (this.value) window.location.href=this.value;">
-                    <option value="" disabled selected>Menu...</option>
-                    <option value="index.html">Home</option>
-                    <option value="projects.html">Projects</option>
-                    <option value="experience.html">Experience</option>
-                    <option value="contact.html">Contact</option>
-                </select>
+
+                <details class="mobile-nav">
+                    <summary>Menu</summary>
+                    <div class="mobile-nav-dropdown">
+                        <a href="index.html">Home</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="experience.html">Experience</a>
+                        <a href="contact.html" class="active">Contact</a>
+                    </div>
+                </details>
             </nav>
         </header>
 
@@ -69,3 +74,4 @@
     </div>
 </body>
 </html>
+```
