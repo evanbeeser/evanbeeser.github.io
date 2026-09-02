@@ -20,19 +20,21 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul class="nav-links">
+                <ul class="desktop-nav">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects.html" class="active">Projects</a></li>
                     <li><a href="../experience.html">Experience</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
-                <select class="mobile-nav-select" onchange="if (this.value) window.location.href=this.value;">
-                    <option value="" disabled selected>Menu...</option>
-                    <option value="../index.html">Home</option>
-                    <option value="../projects.html">Projects</option>
-                    <option value="../experience.html">Experience</option>
-                    <option value="../contact.html">Contact</option>
-                </select>
+                <details class="mobile-nav">
+                    <summary>Menu ▾</summary>
+                    <div class="mobile-nav-dropdown">
+                        <a href="../index.html">Home</a>
+                        <a href="../projects.html" class="active">Projects</a>
+                        <a href="../experience.html">Experience</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                </details>
             </nav>
         </header>
 
@@ -40,43 +42,23 @@
             <article class="project-subpage">
                 <header class="project-header">
                     <h1>2026 TMR Rover Arm</h1>
-                    
                     <div class="project-meta-line">
                         <span class="meta-item">Role: Arm System Lead</span>
                         <span class="divider">|</span>
-                        <span class="meta-item">Date: Sept 2025 – Present</span>
+                        <span class="meta-item">Date: Sep 2024 – Aug 2026</span>
                     </div>
                 </header>
 
                 <div class="project-hero-media">
-                    <img src="../images/project-2-thumb.jpg" alt="2026 TMR Rover Arm Assembly">
+                    <img src="../images/project-2-thumb.jpg" alt="2026 TMR Rover Arm">
                 </div>
 
                 <p class="project-caption-tagline">All new 6-DoF robotic manipulator arm designed for TMR 2026 URC competition.</p>
 
                 <div class="project-body-full">
                     <h2>Overview</h2>
-                    <p>
-                        Led the full mechanical design and development of an all-new 6-degree-of-freedom manipulator arm for the Toronto MetRobotics (TMR) rover, engineered specifically for University Rover Challenge (URC) competition tasks.
-                    </p>
-
-                    <h2>Design & Analysis</h2>
-                    <p>
-                        Executed dynamic trajectory and kinematic modeling in MATLAB to optimize joint range and workspace coverage. Performed finite element analysis (FEA) on structural links to maximize strength-to-weight ratio while maintaining strict deflection bounds under maximum payload leverage.
-                    </p>
-
-                    <h2>Key Engineering Deliverables</h2>
-                    <ul>
-                        <li>Designed modular joint assemblies integrating high-reduction custom actuators.</li>
-                        <li>Implemented internal cable management to protect signal and power harnesses during full joint rotations.</li>
-                        <li>Engineered end-effector mounting interfaces for seamless task-specific tool swaps.</li>
-                    </ul>
+                    <p>Designed and integrated a complete 6-degree-of-freedom robotic arm from scratch for Toronto MetRobotics, capable of dextrous manipulation tasks required during competition.</p>
                 </div>
-
-                <section class="project-gallery">
-                    <img src="../images/project2-detail-1.jpg" alt="Rover Arm CAD Layout">
-                    <img src="../images/project2-detail-2.jpg" alt="Rover Arm Joint Detail">
-                </section>
 
                 <div class="back-link-container">
                     <a href="../projects.html" class="back-link">← back to all projects</a>
