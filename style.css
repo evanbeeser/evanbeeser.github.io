@@ -8,16 +8,16 @@
 html, body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden; /* Prevents all horizontal scrolling on mobile */
+    overflow-x: hidden;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    color: #222;
-    background-color: #fafafa;
+    color: #e0e0e0;
+    background-color: #121212;
     line-height: 1.6;
 }
 
 .site-wrapper {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     min-height: 100vh;
@@ -30,12 +30,11 @@ html, body {
 header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #2a2a2a;
     width: 100%;
 }
 
-/* Desktop Header Layout */
-#desktop-header nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +47,7 @@ header {
     gap: 8px;
     text-decoration: none;
     font-weight: 600;
-    color: #111;
+    color: #ffffff;
 }
 
 .nav-logo {
@@ -56,56 +55,258 @@ header {
     height: 24px;
 }
 
-.nav-links {
+.desktop-nav {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
-.nav-links a {
+.desktop-nav a {
     text-decoration: none;
-    color: #666;
+    color: #a0a0a0;
     font-weight: 400;
+    transition: color 0.2s ease;
 }
 
-.nav-links a.active,
-.nav-links a:hover {
-    color: #000;
+.desktop-nav a.active,
+.desktop-nav a:hover {
+    color: #ffffff;
     font-weight: 600;
 }
 
-/* Mobile Header Layout */
-#mobile-header {
-    display: none; /* Hidden by default on desktop */
+/* Mobile Navigation Dropdown */
+.mobile-nav {
+    display: none;
+    position: relative;
 }
 
-#mobile-header nav {
-    width: 100%;
+.mobile-nav summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #fff;
 }
 
-.mobile-nav-select {
-    width: 100%;
-    padding: 10px 12px;
-    font-family: inherit;
-    font-size: 1rem;
-    border: 1px solid #ccc;
+.mobile-nav-dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
     border-radius: 6px;
-    background-color: #fff;
-    color: #111;
-    outline: none;
-    appearance: auto;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.mobile-nav-dropdown a {
+    padding: 10px 14px;
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.mobile-nav-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav-dropdown a.active,
+.mobile-nav-dropdown a:hover {
+    background-color: #2a2a2a;
+    color: #fff;
 }
 
 /* Responsive Visibility Switch */
 @media screen and (max-width: 768px) {
-    /* Hide the entire desktop header on mobile */
-    #desktop-header {
+    .desktop-nav {
         display: none !important;
     }
 
-    /* Show only the mobile header on mobile */
-    #mobile-header {
+    .mobile-nav {
         display: block !important;
+    }
+}
+
+/* Hero Section */
+.about-split {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.inline-pill {
+    color: #61afef;
+    text-decoration: none;
+}
+
+.inline-pill:hover {
+    text-decoration: underline;
+}
+
+/* Projects Grid & Cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #444;
+}
+
+.project-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem 1rem 0.3rem 1rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+    padding: 0 1rem 1rem 1rem;
+    flex-grow: 1;
+}
+
+.project-link-text {
+    font-size: 0.85rem;
+    color: #61afef;
+    padding: 0 1rem 1rem 1rem;
+    font-weight: 500;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-card {
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 0.05em;
+}
+
+.contact-card h3 {
+    color: #fff;
+    margin: 0.3rem 0;
+}
+
+.contact-link-text {
+    color: #61afef;
+    font-size: 0.9rem;
+}
+
+/* Timeline Layout */
+.timeline-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 1.5rem;
+    background-color: #1e1e1e;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.timeline-content h2 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.timeline-org {
+    color: #61afef;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+    font-size: 0.92rem;
+    color: #ccc;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 650px) {
+    .about-split {
+        flex-direction: column;
+        text-align: center;
+    }
+    .timeline-item {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -114,6 +315,6 @@ footer {
     margin-top: auto;
     padding-top: 2rem;
     font-size: 0.85rem;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+    color: #666;
+    border-top: 1px solid #2a2a2a;
 }
