@@ -1,6 +1,51 @@
-/* Default desktop view: Hide mobile dropdown, show desktop list */
-.mobile-nav-select {
-    display: none;
+/* Core Layout & Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #222;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+.site-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navigation */
+header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+}
+
+.nav-logo {
+    width: 24px;
+    height: 24px;
 }
 
 .nav-links {
@@ -9,21 +54,47 @@
     gap: 1.5rem;
 }
 
-/* Mobile view: Hide desktop list, show mobile dropdown */
-@media (max-width: 768px) {
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Default state: Hide dropdown on desktop screens */
+.mobile-nav-select {
+    display: none;
+}
+
+/* Mobile Responsive Navigation Switch */
+@media screen and (max-width: 768px) {
     .nav-links {
         display: none !important;
     }
 
     .mobile-nav-select {
         display: block !important;
-        width: 100%;
-        max-width: 200px;
-        padding: 8px 12px;
+        width: 140px;
+        padding: 6px 10px;
         font-family: inherit;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         border: 1px solid #ccc;
-        border-radius: 6px;
+        border-radius: 4px;
         background-color: #fff;
+        color: #333;
     }
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding-top: 2rem;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
