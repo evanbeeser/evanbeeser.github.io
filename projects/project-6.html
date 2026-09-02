@@ -20,69 +20,54 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul>
+                <ul class="desktop-nav">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects.html" class="active">Projects</a></li>
                     <li><a href="../experience.html">Experience</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
+                <details class="mobile-nav">
+                    <summary>Menu ▾</summary>
+                    <div class="mobile-nav-dropdown">
+                        <a href="../index.html">Home</a>
+                        <a href="../projects.html" class="active">Projects</a>
+                        <a href="../experience.html">Experience</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                </details>
             </nav>
         </header>
 
-        <main class="project-detail-main">
-            <div class="project-detail-container">
-                <a href="../projects.html" class="back-link">&larr; Back to All Projects</a>
-
-                <h1 class="project-title">Vacuum Tester</h1>
+        <main>
+            <article class="project-subpage">
+                <header class="project-header">
+                    <h1>Vacuum Tester</h1>
+                    <div class="project-meta-line">
+                        <span class="meta-item">Role: Mechanical Design Co-op</span>
+                        <span class="divider">|</span>
+                        <span class="meta-item">Date: May 2026 – Aug 2026</span>
+                    </div>
+                </header>
 
                 <div class="project-hero-media">
-                    <img src="../images/project-6-thumb.jpg" alt="Vacuum Tester Device" class="project-hero-img">
-                    <p class="image-caption">Portable seal testing device designed during internship at Blue Robotics.</p>
+                    <img src="../images/project-6-thumb.jpg" alt="Vacuum Tester Product">
                 </div>
 
-                <div class="project-meta-bar">
-                    <p><strong>ROLE:</strong> Mechanical Design Co-op</p>
-                    <p><strong>DATE:</strong> May 2026 – Aug 2026</p>
+                <p class="project-caption-tagline">Handheld automatic leak-detector product I developed while at Blue Robotics.</p>
+
+                <div class="project-body-full">
+                    <h2>Overview</h2>
+                    <p>Engineered mechanical enclosures, sealing interfaces, and internal component layouts for a specialized handheld vacuum testing tool during my co-op term at Blue Robotics.</p>
                 </div>
 
-                <section class="project-section">
-                    <h2>Background</h2>
-                    <p>Handheld automatic leak-detector product I developed while at Blue Robotics to streamline subsea enclosure seal verification prior to ocean deployment.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>System Overview</h2>
-                    <p>Integrated vacuum pump system, pressure sensor interface, and custom molded enclosure designed for field reliability in harsh marine environments.</p>
-                    
-                    <div class="project-media-block">
-                        <img src="../images/project-6-detail-1.jpg" alt="Seal Tester CAD Exploded">
-                        <p class="image-caption">Exploded assembly view showing internal manifold, pump mounting, and O-ring seal placement.</p>
-                    </div>
-                </section>
-
-                <section class="project-section">
-                    <h2>Engineering & CAD Details</h2>
-                    <p>Selection of internal pneumatic valving and DfM consideration for injection-molded outer shells and elastomer overmolds.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>Media Gallery</h2>
-                    <div class="project-gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/project-6-gallery-1.jpg" alt="Functional Prototype">
-                            <p class="image-caption">3D printed early functional prototype used for internal pressure drop validation.</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/project-6-gallery-2.jpg" alt="Waterproof Chamber Test">
-                            <p class="image-caption">Submersible chamber test verifying vacuum retention under real-world conditions.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <div class="back-link-container">
+                    <a href="../projects.html" class="back-link">← back to all projects</a>
+                </div>
+            </article>
         </main>
 
         <footer>
-            <p>Last updated: August 23, 2026</p>
+            <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
     </div>
 </body>
