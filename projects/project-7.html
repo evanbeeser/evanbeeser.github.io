@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sixpenny Corten Cladding | Evan Beeser</title>
-    
-    <!-- Chrome Tab Favicon -->
     <link rel="icon" type="image/x-icon" href="../eb_icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="site-wrapper">
-        <!-- Header & Navigation -->
         <header>
             <nav>
                 <div class="logo">
@@ -25,23 +20,28 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul>
+                <ul class="desktop-nav">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects.html" class="active">Projects</a></li>
                     <li><a href="../experience.html">Experience</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
+                <details class="mobile-nav">
+                    <summary>Menu ▾</summary>
+                    <div class="mobile-nav-dropdown">
+                        <a href="../index.html">Home</a>
+                        <a href="../projects.html" class="active">Projects</a>
+                        <a href="../experience.html">Experience</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                </details>
             </nav>
         </header>
 
-        <!-- Main Content Area -->
         <main>
             <article class="project-subpage">
-                <!-- Project Header -->
                 <header class="project-header">
                     <h1>Sixpenny Corten Cladding</h1>
-                    
-                    <!-- Unified Role & Date Meta Line -->
                     <div class="project-meta-line">
                         <span class="meta-item">Role: Design Intern</span>
                         <span class="divider">|</span>
@@ -49,48 +49,23 @@
                     </div>
                 </header>
 
-                <!-- Hero Image Container -->
                 <div class="project-hero-media">
-                    <img src="../images/project-7-thumb.jpg" alt="Sixpenny Corten Cladding System">
+                    <img src="../images/project-7-thumb.jpg" alt="Sixpenny Corten Cladding">
                 </div>
 
-                <!-- Italicized Tagline Below Image -->
                 <p class="project-caption-tagline">Welded corten steel cladding system I helped design while at Sixpenny Architectural Fabrication.</p>
 
-                <!-- Project Body Content -->
                 <div class="project-body-full">
                     <h2>Overview</h2>
-                    <p>
-                        Assisted in the end-to-end mechanical design, sheet metal layout, and detailing of a custom welded corten steel exterior cladding system during my design internship at Sixpenny Architectural Fabrication.
-                    </p>
-
-                    <h2>Design & Analysis</h2>
-                    <p>
-                        Generated detailed CAD models and flat-pattern layouts in OnShape, factoring in material bend allowances, laser-cutting kerf, and structural thermal expansion. Integrated hidden fast-assembly bracketry to ensure a seamless exterior aesthetic.
-                    </p>
-
-                    <h2>Key Engineering Deliverables</h2>
-                    <ul>
-                        <li>Drafted comprehensive shop drawing packages with weld symbols and surface weathering guidelines.</li>
-                        <li>Utilized Design for Assembly (DfA) principles to reduce site installation time for field technicians.</li>
-                        <li>Coordinated fabrication specifications directly with brake press operators and welders.</li>
-                    </ul>
+                    <p>Created detailed parametric models, shop fabrication drawings, and submittal packages for architectural corten steel wall cladding assemblies.</p>
                 </div>
 
-                <!-- Gallery Grid -->
-                <section class="project-gallery">
-                    <img src="../images/project7-detail-1.jpg" alt="Corten Panel Shop Drawing">
-                    <img src="../images/project7-detail-2.jpg" alt="Cladding Bracket Assembly Detail">
-                </section>
-
-                <!-- Back Link at Bottom -->
                 <div class="back-link-container">
                     <a href="../projects.html" class="back-link">← back to all projects</a>
                 </div>
             </article>
         </main>
 
-        <!-- Footer -->
         <footer>
             <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
