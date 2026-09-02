@@ -20,76 +20,54 @@
                         <span>evan beeser</span>
                     </a>
                 </div>
-                <ul class="nav-links">
+                <ul class="desktop-nav">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../projects.html" class="active">Projects</a></li>
                     <li><a href="../experience.html">Experience</a></li>
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
-                <select class="mobile-nav-select" onchange="if (this.value) window.location.href=this.value;">
-                    <option value="" disabled selected>Menu...</option>
-                    <option value="../index.html">Home</option>
-                    <option value="../projects.html">Projects</option>
-                    <option value="../experience.html">Experience</option>
-                    <option value="../contact.html">Contact</option>
-                </select>
+                <details class="mobile-nav">
+                    <summary>Menu ▾</summary>
+                    <div class="mobile-nav-dropdown">
+                        <a href="../index.html">Home</a>
+                        <a href="../projects.html" class="active">Projects</a>
+                        <a href="../experience.html">Experience</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                </details>
             </nav>
         </header>
 
-        <main class="project-detail-main">
-            <div class="project-detail-container">
-                <a href="../projects.html" class="back-link">&larr; Back to All Projects</a>
-
-                <h1 class="project-title">2027 TMR Rover Arm Actuators</h1>
+        <main>
+            <article class="project-subpage">
+                <header class="project-header">
+                    <h1>2027 TMR Rover Arm Actuators</h1>
+                    <div class="project-meta-line">
+                        <span class="meta-item">Role: Arm System Lead</span>
+                        <span class="divider">|</span>
+                        <span class="meta-item">Date: Sep 2026 – Present</span>
+                    </div>
+                </header>
 
                 <div class="project-hero-media">
-                    <img src="../images/project-3-thumb.jpg" alt="Harmonic Actuator Rendering" class="project-hero-img">
-                    <p class="image-caption">Exploded render of the custom harmonic drive actuator design for the 2027 arm joint modules.</p>
+                    <img src="../images/project-3-thumb.jpg" alt="2027 TMR Rover Arm Actuators">
                 </div>
 
-                <div class="project-meta-bar">
-                    <p><strong>ROLE:</strong> Lead Actuator Designer</p>
-                    <p><strong>DATE:</strong> Sep 2025 – Present</p>
+                <p class="project-caption-tagline">New actuators feature harmonic gearboxes for greatly reduced backlash and cost.</p>
+
+                <div class="project-body-full">
+                    <h2>Overview</h2>
+                    <p>Engineered custom compact joint actuators utilizing precision harmonic gear drives to achieve high torque density and zero perceptible backlash.</p>
                 </div>
 
-                <section class="project-section">
-                    <h2>Background</h2>
-                    <p>New actuators feature harmonic gearboxes for greatly reduced backlash and cost, designed specifically to fit tight volumetric constraints within the main elbow and shoulder joints.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>System Overview</h2>
-                    <p>Harmonic drive component integration, flexible spline selection, and custom motor housing integration designed to maximize output torque density.</p>
-                    
-                    <div class="project-media-block">
-                        <img src="../images/project-3-detail-1.jpg" alt="Cross Section Actuator">
-                        <p class="image-caption">Section view showcasing custom bearing arrangement and wave generator interface.</p>
-                    </div>
-                </section>
-
-                <section class="project-section">
-                    <h2>Engineering & CAD Details</h2>
-                    <p>Finite element simulation of magnetic flux paths for integrated brushless motor housings alongside stress analysis on the flexspline tooth geometry.</p>
-                </section>
-
-                <section class="project-section">
-                    <h2>Media Gallery</h2>
-                    <div class="project-gallery-grid">
-                        <div class="gallery-item">
-                            <img src="../images/project-3-gallery-1.jpg" alt="Wave Generator Detail">
-                            <p class="image-caption">Wave generator bearing fit check and test assembly.</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../images/project-3-gallery-2.jpg" alt="Dyno Testing Rig">
-                            <p class="image-caption">Benchtop torque dyno setup used for actuator efficiency measurements.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <div class="back-link-container">
+                    <a href="../projects.html" class="back-link">← back to all projects</a>
+                </div>
+            </article>
         </main>
 
         <footer>
-            <p>Last updated: August 23, 2026</p>
+            <p>&copy; 2026 Evan Beeser. All rights reserved.</p>
         </footer>
     </div>
 </body>
