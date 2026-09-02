@@ -1,3 +1,4 @@
+```css
 /* ==========================================================================
    Global Reset & Dark Mode Theme
    ========================================================================== */
@@ -638,10 +639,14 @@ footer {
    Mobile Navigation
    Desktop navigation remains unchanged; mobile gets a dropdown menu.
    ========================================================================== */
-.mobile-nav { display: none; }
+.mobile-nav {
+    display: none;
+}
 
 @media (max-width: 650px) {
-    nav .desktop-nav { display: none; }
+    nav .desktop-nav {
+        display: none;
+    }
 
     .mobile-nav {
         display: block;
@@ -662,7 +667,9 @@ footer {
         user-select: none;
     }
 
-    .mobile-nav summary::-webkit-details-marker { display: none; }
+    .mobile-nav summary::-webkit-details-marker {
+        display: none;
+    }
 
     .mobile-nav summary::after {
         content: "▾";
@@ -701,3 +708,4 @@ footer {
         color: var(--accent);
     }
 }
+```
